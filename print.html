@@ -83,146 +83,1217 @@
 
         // --- DATA EXTRACTED FROM PDFs V2 ---
         const budgetData = {
-            palma: {
-                id: 'palma',
-                name: "Palma de Majorque",
-                totalTTC: 75650.89,
-                totalHT: 63110.17,
-                honorairesHT: 5938.63,
-                categories: {
-                    hotellerie: 15532.92,
-                    restauration: 10829.50,
-                    activites: 4997.18,
-                    transport: 18128.94,
-                    rse: 0.00,
-                    accompagnement: 7683.00
+    "ailette": {
+        "id": "ailette",
+        "name": "Lac d'Ailette",
+        "totalTTC": 263754.27,
+        "totalHT": 219931.06,
+        "honorairesHT": 23564.04,
+        "categories": {
+            "hebergement": 91421.28,
+            "reunions": 25855.52,
+            "restauration": 36341.79,
+            "gestion": 30528.24,
+            "accompagnement": 12220.18
+        },
+        "details": {
+            "hebergement": [
+                {
+                    "desc": "Forfait s\u00e9minaire r\u00e9sidentiel du 13/10 au matin au 14/10",
+                    "price": 70808.09,
+                    "subDesc": "315 pax\n1 personne par chambre avec salle de bain individuelle\nInclus : petit-d\u00e9jeuner, d\u00e9jeuner, d\u00eener, deux pauses caf\u00e9 par jour, salle de r\u00e9union pl\u00e9ni\u00e8re avec acc\u00e8s wifi premium, mise \u00e0 disposition d'un v\u00e9lo, acc\u00e8s Aqua Mundo"
                 },
-                details: {
-                    hotellerie: [
-                        { desc: "Chambre d'hôtel single B&B", price: 7349.96, subDesc: "Hôtel Artmadams\nDeux nuitées pour 21 personnes (21 chambres)" },
-                        { desc: "Chambre d'hôtel twin B&B", price: 7819.97, subDesc: "Hôtel Artmadams\nDeux nuitées pour 34 personnes (17 chambres)" },
-                        { desc: "Taxe de séjour", price: 363.00, subDesc: "Pour 2 nuitées" }
-                    ],
-                    restauration: [
-                        { desc: "Dîner J1 - Patron Lunares", price: 2722.50, subDesc: "Entrée - plat - dessert - eaux - vins" },
-                        { desc: "Déjeuner J2 - repas Casa Esment", price: 2178.00, subDesc: "Tapas à partager - desserts - eaux - cafés / thés" },
-                        { desc: "Déjeuner J2 - boissons Casa Esment", price: 605.00, subDesc: "Softs - Vins écologiques 1 bouteille pour 4 personnes" },
-                        { desc: "Dîner J2 - repas Cuit", price: 2783.00, subDesc: "Entrée - plat - dessert - eaux - vins - café" },
-                        { desc: "Dîner J2 - boissons Cuit", price: 363.00, subDesc: "Softs - bières (Option)" },
-                        { desc: "Déjeuner J3 - ArtMadams", price: 2541.00, subDesc: "Entrée - plat - dessert - eaux - café - thé - vins" }
-                    ],
-                    activites: [
-                        { desc: "Team building RSE", price: 2299.00, subDesc: "Atelier d'agriculture écologique" },
-                        { desc: "Activité culturelle", price: 2698.18, subDesc: "Découverte de la ville à vélo avec un itinéraire et des guides" },
-                        { desc: "Activité culturelle : challenge photo (Option)", price: 0.00, subDesc: "En attente de devis" }
-                    ],
-                    transport: [
-                        { desc: "Billets d'avion Lyon - Palma de Majorque", price: 8369.40, subDesc: "Sous réserve de disponibilité et de l'évolution du tarif\nBagage à main et cabine uniquement" },
-                        { desc: "Frais d'émission des billets Lyon", price: 708.18, subDesc: "Aller-retour" },
-                        { desc: "Billets d'avion Paris Orly - Palma de Majorque", price: 6130.80, subDesc: "Sous réserve de disponibilité et de l'évolution du tarif\nBagage à main et cabine uniquement" },
-                        { desc: "Frais d'émission des billets Paris", price: 518.76, subDesc: "Aller-retour" },
-                        { desc: "Temps homme gestion des transports", price: 600.00 },
-                        { desc: "Transferts", price: 1801.80, subDesc: "Aller-retour pour l'aéroport et le team building" }
-                    ],
-                    rse: [
-                        { desc: "Goodies passeport RSE (Option)", price: 495.00 },
-                        { desc: "Crayons à planter (Option)", price: 181.50 },
-                        { desc: "Tampons passeport (Option)", price: 48.84, subDesc: "Monture en bois" },
-                        { desc: "Création graphique (Option)", price: 200.00 },
-                        { desc: "Bilan carbone (Option)", price: 1800.00 }
-                    ],
-                    accompagnement: [
-                        { desc: "Temps homme Weever", price: 6000.00, subDesc: "Présence de 2 Weevers sur votre événement\nForfait jour avant minuit : 900€\nForfait jour dimanche avant minuit : 1 200€" },
-                        { desc: "VHR - Hébergement", price: 550.00 },
-                        { desc: "VHR - Transport", price: 858.00 },
-                        { desc: "VHR - Restauration", price: 275.00, subDesc: "5 repas" }
-                    ]
+                {
+                    "desc": "Taxes de s\u00e9jour",
+                    "price": 727.65,
+                    "subDesc": "315 pax"
+                },
+                {
+                    "desc": "Forfait journ\u00e9e d'\u00e9tude Journ\u00e9e du 14/10",
+                    "price": 19885.54,
+                    "subDesc": "315 pax\nInclus : d\u00e9jeuner, deux pauses caf\u00e9 par jour, salle de r\u00e9union pl\u00e9ni\u00e8re avec acc\u00e8s wifi premium"
                 }
+            ],
+            "reunions": [
+                {
+                    "desc": "Salle pl\u00e9ni\u00e8re - inclus",
+                    "price": 0.0,
+                    "subDesc": "Salle pl\u00e9ni\u00e8re \u00e9quip\u00e9e 13/10 - 14/10 (1 \u00e9cran, 1 paperboard, wifi inclus) - 519 m2"
+                },
+                {
+                    "desc": "Salle pl\u00e9ni\u00e8re - \u00e9quipement technique et audiovisuel",
+                    "price": 12730.52,
+                    "subDesc": "Dispositif audiovisuel complet comprenant : sonorisation professionnelle, \u00e9clairage sc\u00e9nique, et dispositif vid\u00e9o. Le tout compl\u00e9t\u00e9 par une structure sc\u00e9nique, pilot\u00e9 par une \u00e9quipe technique d\u00e9di\u00e9e."
+                },
+                {
+                    "desc": "Privatisation du Centre de convention",
+                    "price": 13125.0,
+                    "subDesc": "Privatisation du centre de convention 13/10 - 14/10\nInclus : Bar \u00e0 activit\u00e9s loisirs en libre service, Conciergerie"
+                }
+            ],
+            "restauration": [
+                {
+                    "desc": "Pause permanente - boissons chaudes",
+                    "price": 1504.91,
+                    "subDesc": "315 pax"
+                },
+                {
+                    "desc": "D\u00e9jeuner 13/10 - Cocktail gourmand suppl\u00e9ment",
+                    "price": 3102.75,
+                    "subDesc": "125 pax"
+                },
+                {
+                    "desc": "Ap\u00e9ritif D\u00eener 13/10",
+                    "price": 3859.85,
+                    "subDesc": "315 pax\n1 coupe de Champagne Vranken + 2 pi\u00e8ces cocktail par personne"
+                },
+                {
+                    "desc": "D\u00eener 13/10 - suppl\u00e9ment Menu Gala",
+                    "price": 7818.93,
+                    "subDesc": "315 pax\nD\u00eener menu 3 plats, boissons incluses (1/3 vin, eaux min\u00e9rales, caf\u00e9 et th\u00e9)"
+                },
+                {
+                    "desc": "Forfait boissons fin de soir\u00e9e",
+                    "price": 8129.84,
+                    "subDesc": "315 pax\nServi pendant 2h (Bi\u00e8re Heineken, vin, alcools forts, soft \u00e0 discr\u00e9tion)"
+                },
+                {
+                    "desc": "Animation soir\u00e9e J1 Time to quizz",
+                    "price": 5239.5,
+                    "subDesc": "Plongez vos invit\u00e9s dans une exp\u00e9rience Bingo g\u00e9ant en fil rouge avec notre animateur"
+                },
+                {
+                    "desc": "Cadeau pour l'\u00e9quipe gagnante",
+                    "price": 100.0,
+                    "subDesc": "A d\u00e9finir ensemble"
+                },
+                {
+                    "desc": "Option 2 Animation soir\u00e9e Blind test live",
+                    "price": 6898.5,
+                    "subDesc": "Jeu en \u00e9quipe et en musique live version groupe. Troph\u00e9e des vainqueurs offert.\nApplication de r\u00e9ponse par smartphone",
+                    "isOption": true
+                },
+                {
+                    "desc": "Soir\u00e9e 13/10 - DJ",
+                    "price": 1137.5,
+                    "subDesc": "Forfait 2h30 (22h30 - 1h00)"
+                },
+                {
+                    "desc": "Soir\u00e9e 13/10 - Agents de s\u00e9curit\u00e9",
+                    "price": 785.93,
+                    "subDesc": "Obligatoire - 1 agent/100 pax. 6h par agent"
+                },
+                {
+                    "desc": "D\u00e9jeuner 14/10 - suppl\u00e9ment buffet Finger Food",
+                    "price": 1802.59,
+                    "subDesc": "Eaux, caf\u00e9s inclus"
+                },
+                {
+                    "desc": "Photobooth",
+                    "price": 1260.0,
+                    "subDesc": "Sur deux jours"
+                },
+                {
+                    "desc": "Bo\u00eete \u00e0 question - Mat\u00e9riel",
+                    "price": 400.0,
+                    "subDesc": "Micro type Sennheiser, Paravent Carton, Table haute, Chaise haute, Ordinateur"
+                },
+                {
+                    "desc": "Bo\u00eete \u00e0 question - Ing\u00e9nieur son",
+                    "price": 1200.0,
+                    "subDesc": "1 jour pr\u00e9paration, 1 jour montage"
+                }
+            ],
+            "gestion": [
+                {
+                    "desc": "Impression Badges",
+                    "price": 1134.0,
+                    "subDesc": "315 badges personnalis\u00e9s Eco-responsable premium"
+                },
+                {
+                    "desc": "Option 2 Badges",
+                    "price": 1323.6,
+                    "subDesc": "315 badges personnalis\u00e9s Eco-responsable premium (Attache cordon)",
+                    "isOption": true
+                },
+                {
+                    "desc": "Photographe",
+                    "price": 2300.0,
+                    "subDesc": "Camille H\u00e9nin Photographie. Le 13 et 14 octobre 2026"
+                },
+                {
+                    "desc": "Hotesses",
+                    "price": 3559.8,
+                    "subDesc": "Jour 1: h\u00f4tesses d'orientation, \u00e9margement, soir\u00e9e. Jour 2: h\u00f4tesses. Inclus frais d\u00e9placement et repas"
+                },
+                {
+                    "desc": "Transfert A-R Roissy",
+                    "price": 2788.5,
+                    "subDesc": "3 forfaits (Transfert de 48 \u00e0 59 places)"
+                },
+                {
+                    "desc": "Transfert A-R Orly",
+                    "price": 3514.5,
+                    "subDesc": "3 forfaits (Transfert de 48 \u00e0 59 places)"
+                },
+                {
+                    "desc": "Transfert A-R Gare de Laon et Reims",
+                    "price": 4675.0,
+                    "subDesc": "5 forfaits (Transfert de 48 \u00e0 59 places)"
+                },
+                {
+                    "desc": "Cr\u00e9ation fil rouge",
+                    "price": 1200.0,
+                    "subDesc": "Concept de l'\u00e9v\u00e9nement, fil rouge autour de l\u2019exp\u00e9rience"
+                },
+                {
+                    "desc": "D\u00e9clinaison kak\u00e9mono",
+                    "price": 90.0
+                },
+                {
+                    "desc": "Impression Kak\u00e9mono",
+                    "price": 300.0,
+                    "subDesc": "2 forfaits"
+                },
+                {
+                    "desc": "Cr\u00e9ation invitation",
+                    "price": 600.0,
+                    "subDesc": "Proposition de 3 pistes graphiques"
+                },
+                {
+                    "desc": "Cr\u00e9ation d'invitation digitale",
+                    "price": 90.0
+                },
+                {
+                    "desc": "D\u00e9clinaison photocall",
+                    "price": 90.0
+                },
+                {
+                    "desc": "Photocall",
+                    "price": 436.8,
+                    "subDesc": "Mur 3x3 m\u00e9tres"
+                },
+                {
+                    "desc": "D\u00e9clinaison support digital",
+                    "price": 90.0
+                },
+                {
+                    "desc": "D\u00e9clinaison sur badge",
+                    "price": 90.0
+                },
+                {
+                    "desc": "Gestion de l'application",
+                    "price": 1800.0,
+                    "subDesc": "TEMPS HOMME: Gestion app mobile, inscriptions, relations partenaires"
+                },
+                {
+                    "desc": "Conception webapp",
+                    "price": 1200.0,
+                    "subDesc": "Cr\u00e9ation d'une web app pour jouer au challenge du village partenaire"
+                },
+                {
+                    "desc": "Masque PPT 10 slides",
+                    "price": 1000.0,
+                    "subDesc": "Proposition de 3 pistes graphiques",
+                    "isOption": true
+                },
+                {
+                    "desc": "Bilan Carbone",
+                    "price": 3000.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Sc\u00e9nographie Plantes hautes",
+                    "price": 360.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Sc\u00e9nographie lettres",
+                    "price": 2172.0,
+                    "subDesc": "15 lettres de 50cm de large sur 70cm de haut"
+                },
+                {
+                    "desc": "Bracelets lumineux",
+                    "price": 1937.64
+                },
+                {
+                    "desc": "Speaker 1 : C\u00e9cile Monteil",
+                    "price": 7800.0,
+                    "subDesc": "Hors VHR",
+                    "isOption": true
+                },
+                {
+                    "desc": "Speaker 2 : Carlos Moreno",
+                    "price": 14400.0,
+                    "subDesc": "Hors VHR",
+                    "isOption": true
+                },
+                {
+                    "desc": "Speaker 3 : Julie Boureau",
+                    "price": 4800.0,
+                    "subDesc": "Hors VHR",
+                    "isOption": true
+                },
+                {
+                    "desc": "Don \u00e0 l'association choisie",
+                    "price": 500.0,
+                    "subDesc": "A minimum 500\u20ac \u00e0 verser \u00e0 une association"
+                },
+                {
+                    "desc": "D\u00e9coration",
+                    "price": 600.0,
+                    "subDesc": "100 Ballons fluo, 30 ballons confettis fluo, peinture corporelle, table nappe et boite \u00e0 lettres"
+                },
+                {
+                    "desc": "Mosa\u00efque Photo",
+                    "price": 1000.0,
+                    "subDesc": "Solution IA Weevup"
+                }
+            ],
+            "accompagnement": [
+                {
+                    "desc": "Forfait Weever",
+                    "price": 8000.0,
+                    "subDesc": "J-1: 5 weevers, J1: 5 weevers, J2: 5 weevers. 1 WEEVER OFFERT"
+                },
+                {
+                    "desc": "VHR - H\u00e9bergement",
+                    "price": 2424.18,
+                    "subDesc": "2 nuits x 5 weevers"
+                },
+                {
+                    "desc": "VHR - Transports",
+                    "price": 1296.0,
+                    "subDesc": "5 weevers (camion weevup + voiture)"
+                },
+                {
+                    "desc": "VHR - Restauration",
+                    "price": 500.0,
+                    "subDesc": "20\u20ac x 5 weevers x 4 repas"
+                },
+                {
+                    "desc": "Rep\u00e9rage avec 1 Weever",
+                    "price": 380.0,
+                    "subDesc": "Sur une base d'une demi-journ\u00e9e",
+                    "isOption": true
+                }
+            ]
+        },
+        "sideEvent": {
+            "totalTTC": 60791.12,
+            "totalHT": 50725.24,
+            "honorairesHT": 5434.85,
+            "categories": {
+                "hebergement": 36709.2,
+                "reunions": 1203.01,
+                "restauration": 0.0,
+                "gestion": 3312.0,
+                "accompagnement": 4066.18
             },
-            casablanca: {
-                id: 'casablanca',
-                name: "Casablanca",
-                totalTTC: 82473.48,
-                totalHT: 68727.90,
-                honorairesHT: 6560.26,
-                categories: {
-                    hotellerie: 12849.03,
-                    restauration: 10053.56,
-                    activites: 7468.17,
-                    transport: 23172.29,
-                    frais_annexes: 1125.77,
-                    rse: 0.00,
-                    accompagnement: 7498.82
-                },
-                details: {
-                    hotellerie: [
-                        { desc: "Chambre standard single B&B", price: 6630.16, subDesc: "Hôtel Hyatt Regency\nDeux nuitées pour 21 personnes (21 chambres)\nTaxe de séjour inclus" },
-                        { desc: "Chambre standard twin B&B", price: 6218.87, subDesc: "Hôtel Hyatt Regency\nDeux nuitées pour 34 personnes (17 chambres)\nTaxe de séjour inclus" }
-                    ],
-                    restauration: [
-                        { desc: "Dîner J1 - Braise", price: 2124.76, subDesc: "Dîner buffet incluant les boissons softs" },
-                        { desc: "Dîner J1 - Braise boissons alcoolisées", price: 403.70, subDesc: "9 bouteilles soit 1 verre de vin par personne" },
-                        { desc: "Soirée J1 - Bliss Rooftop (Option)", price: 1510.08, subDesc: "Forfait open bar premium 1h00\nJus de fruits, eaux minérales, sodas, bière, vin blanc et rouge, café et thé\nLa deuxième heure d'open bar à 22,42 €" },
-                        { desc: "Déjeuner J2 - La Sqala", price: 2359.50, subDesc: "Déjeuner incluant les boissons softs" },
-                        { desc: "Dîner J2 - Restaurant Dar Dada", price: 3082.20, subDesc: "Menu à partager et boissons softs" },
-                        { desc: "Dîner J2 - Dar Dada boissons alcoolisées", price: 1148.40, subDesc: "Forfait vin ou bière" },
-                        { desc: "Soirée J2 - Dar Beida (Option)", price: 0.00, subDesc: "Show typique marocain - en attente de devis" },
-                        { desc: "Déjeuner J3 - French Brassery", price: 935.00, subDesc: "Déjeuner au sein de l'hôtel incluant un verre de vin pour les parisiens" }
-                    ],
-                    activites: [
-                        { desc: "Guides 1/2 journée", price: 660.00, subDesc: "Guides local sur une demi journée pour vous faire visiter l'Ancienne Médina" },
-                        { desc: "Visite Mosquée Hassan II", price: 781.06, subDesc: "Avec un guide" },
-                        { desc: "Team-building : Bike builders", price: 6027.12, subDesc: "1 vélo par équipe de maximum 8 personnes\nDJ & sonorisation\nAnimateurs" },
-                        { desc: "Team-building : Plantation d'arbre (Option)", price: 5764.00, subDesc: "Gestion complète d'une activité environnementale à Casablanca pour 55 participants, comprenant la plantation d'arbres avec un centre éducatif pour la jeunesse, en collaboration avec des partenaires et lieux interculturels." }
-                    ],
-                    transport: [
-                        { desc: "Billets d'avion Lyon - Casablanca", price: 13935.53, subDesc: "Aller - Départ : 12h50 - Arrivée : 14h40\nRetour - Départ : 14h55 - Arrivée : 18h40\nSous réserve de disponibilité et de l'évolution du tarif\nBagage à main et cabine" },
-                        { desc: "Frais d'émission des billets Lyon", price: 1179.16 },
-                        { desc: "Billets d'avion Paris Orly - Casablanca", price: 6318.00, subDesc: "Aller départ : 14h40 - Arrivée : 16h50\nRetour départ : 16h55 - Arrivée : 20h55\nSous réserve de disponibilité et de l'évolution du tarif\nBagage à main et cabine" },
-                        { desc: "Frais d'émission des billets Paris", price: 534.60 },
-                        { desc: "Temps homme gestion des transports", price: 600.00 },
-                        { desc: "Transferts train aller", price: 302.50 },
-                        { desc: "Transferts train retour", price: 302.50 }
-                    ],
-                    frais_annexes: [
-                        { desc: "Frais de conversion", price: 1125.77, subDesc: "1,5% du montant total HT de la prestation" }
-                    ],
-                    rse: [
-                        { desc: "Goodies passeport RSE (Option)", price: 495.00 },
-                        { desc: "Crayons à planter (Option)", price: 181.50 },
-                        { desc: "Tampons passeport (Option)", price: 48.11, subDesc: "Monture en bois" },
-                        { desc: "Création graphique (Option)", price: 200.00 },
-                        { desc: "Bilan carbone (Option)", price: 1800.00 }
-                    ],
-                    accompagnement: [
-                        { desc: "Temps homme Weever", price: 6000.00, subDesc: "Présence de 2 Weevers sur votre événement\nForfait jour avant minuit : 900€\nForfait jour dimanche avant minuit : 1 200€" },
-                        { desc: "VHR - Hébergement", price: 365.82 },
-                        { desc: "VHR - Transport", price: 858.00 },
-                        { desc: "VHR - Restauration", price: 275.00, subDesc: "5 repas" }
-                    ]
-                }
+            "details": {
+                "hebergement": [
+                    {
+                        "desc": "Forfait s\u00e9minaire r\u00e9sidentiel du 14/10 au matin au 15/10",
+                        "price": 26249.85
+                    },
+                    {
+                        "desc": "Taxes de s\u00e9jour",
+                        "price": 346.5
+                    },
+                    {
+                        "desc": "Forfait journ\u00e9e d'\u00e9tude (15/10)",
+                        "price": 10112.85
+                    }
+                ],
+                "reunions": [
+                    {
+                        "desc": "Salle pl\u00e9ni\u00e8re \u00e9quip\u00e9e 15/10",
+                        "price": 0.0
+                    },
+                    {
+                        "desc": "Salles de sous-commission (3)",
+                        "price": 1203.01
+                    }
+                ],
+                "restauration": [
+                    {
+                        "desc": "D\u00eener 14/10, D\u00e9jeuner 15/10, Pauses",
+                        "price": 0.0,
+                        "subDesc": "Inclus"
+                    }
+                ],
+                "gestion": [
+                    {
+                        "desc": "Transfert > Roissy",
+                        "price": 1014.0
+                    },
+                    {
+                        "desc": "Transfert > Orly",
+                        "price": 1278.0
+                    },
+                    {
+                        "desc": "Transfert > Gare de Laon et Reims",
+                        "price": 1020.0
+                    }
+                ],
+                "accompagnement": [
+                    {
+                        "desc": "Forfait Weever (J2, J3)",
+                        "price": 2700.0
+                    },
+                    {
+                        "desc": "VHR - H\u00e9bergement",
+                        "price": 727.25
+                    },
+                    {
+                        "desc": "VHR - Axes de s\u00e9jour",
+                        "price": 6.93
+                    },
+                    {
+                        "desc": "VHR - Transports",
+                        "price": 432.0
+                    },
+                    {
+                        "desc": "VHR - Restauration",
+                        "price": 200.0
+                    }
+                ]
             }
-        };
+        }
+    },
+    "belambra": {
+        "id": "belambra",
+        "name": "Belambra Presqu'\u00eele",
+        "totalTTC": 299666.73,
+        "totalHT": 249809.63,
+        "honorairesHT": 26765.32,
+        "categories": {
+            "hebergement": 69734.68,
+            "reunions": 58274.14,
+            "restauration": 58300.19,
+            "gestion": 24978.54,
+            "accompagnement": 11756.77
+        },
+        "details": {
+            "hebergement": [
+                {
+                    "desc": "Formule pension compl\u00e8te adulte base Double",
+                    "price": 3199.9,
+                    "subDesc": "20 pax"
+                },
+                {
+                    "desc": "Formule pension compl\u00e8te adulte base Single",
+                    "price": 66081.18,
+                    "subDesc": "295 pax"
+                },
+                {
+                    "desc": "Taxes de s\u00e9jour",
+                    "price": 453.6,
+                    "subDesc": "315 pax"
+                }
+            ],
+            "reunions": [
+                {
+                    "desc": "Forfait Business Plus 13.10",
+                    "price": 19345.1,
+                    "subDesc": "1 salle, 2 pauses, 1 d\u00e9jeuner. Salle Les 3 Fontaines (320m2)"
+                },
+                {
+                    "desc": "Salle Les 3 Fontaines - inclus 13.10",
+                    "price": 0.0
+                },
+                {
+                    "desc": "Salles cat\u00e9gorie D journ\u00e9e 13.10 (5 pi\u00e8ces)",
+                    "price": 2245.87
+                },
+                {
+                    "desc": "Salles cat\u00e9gorie C journ\u00e9e 13.10 (3 pi\u00e8ces)",
+                    "price": 1897.5
+                },
+                {
+                    "desc": "Privatisation du rooftop 13.10",
+                    "price": 6416.66
+                },
+                {
+                    "desc": "Salle Soir\u00e9e de Gala 13.10",
+                    "price": 907.5
+                },
+                {
+                    "desc": "Salle Soir\u00e9e de Gala - Agent de s\u00e9curit\u00e9",
+                    "price": 715.0
+                },
+                {
+                    "desc": "Salle Les 3 Fontaines - inclus 14.10",
+                    "price": 0.0
+                },
+                {
+                    "desc": "Salles cat\u00e9gorie C journ\u00e9e 14.10 (1 pi\u00e8ce)",
+                    "price": 632.5
+                },
+                {
+                    "desc": "Salles cat\u00e9gorie D journ\u00e9e 14.10 (4 pi\u00e8ces)",
+                    "price": 1796.7
+                },
+                {
+                    "desc": "Privatisation Pin\u00e8de - Village partenaire",
+                    "price": 4583.34
+                },
+                {
+                    "desc": "Chapiteau Pin\u00e8de - Village partenaire",
+                    "price": 12987.98
+                },
+                {
+                    "desc": "Chapiteau Pin\u00e8de - frais de transport",
+                    "price": 3880.8
+                },
+                {
+                    "desc": "Technique Chapiteau",
+                    "price": 1806.02
+                },
+                {
+                    "desc": "Technicien Son & Vid\u00e9o obligatoire",
+                    "price": 641.67
+                },
+                {
+                    "desc": "Salle pl\u00e9ni\u00e8re - Agent de s\u00e9curit\u00e9",
+                    "price": 357.5
+                },
+                {
+                    "desc": "Frais de dossier Groupe",
+                    "price": 60.0
+                }
+            ],
+            "restauration": [
+                {
+                    "desc": "D\u00e9jeuner 13.10",
+                    "price": 6186.13,
+                    "subDesc": "Cocktail d\u00e9jeunatoire - traiteur Cabiron (125 pax)"
+                },
+                {
+                    "desc": "Option - Forfait Vin D\u00e9jeuner 13.10",
+                    "price": 1552.32,
+                    "isOption": true
+                },
+                {
+                    "desc": "Ap\u00e9ritif 13.10",
+                    "price": 4331.25,
+                    "subDesc": "Ap\u00e9ritif bi\u00e8re et vin + planches au bar (1h)"
+                },
+                {
+                    "desc": "D\u00eener 13.10",
+                    "price": 10332.63,
+                    "subDesc": "Suppl\u00e9ment repas \"Signature\" + nappes/serviettes tissus. D\u00eener menu 3 plats"
+                },
+                {
+                    "desc": "Forfait boissons fin de soir\u00e9e",
+                    "price": 9816.35,
+                    "subDesc": "Open bar soir\u00e9e sans champagne (22h-1h)"
+                },
+                {
+                    "desc": "Animation soir\u00e9e J1 Time to quizz",
+                    "price": 5239.5,
+                    "subDesc": "Blind test live jeu en \u00e9quipe et en musique live version groupe (4 musiciens)"
+                },
+                {
+                    "desc": "Cadeau pour l'\u00e9quipe gagnante",
+                    "price": 100.0
+                },
+                {
+                    "desc": "Option 2 Animation soir\u00e9e Blind test",
+                    "price": 6930.0,
+                    "subDesc": "Blind test live jeu en \u00e9quipe et en musique live",
+                    "isOption": true
+                },
+                {
+                    "desc": "DJ soir\u00e9e 13.10",
+                    "price": 1466.66,
+                    "subDesc": "Soir\u00e9e dansante avec DJ (22h - 1h)"
+                },
+                {
+                    "desc": "D\u00e9jeuner 14.10",
+                    "price": 17307.68,
+                    "subDesc": "Cocktail d\u00e9jeunatoire street food - traiteur Cabiron (315 pax)"
+                },
+                {
+                    "desc": "Option - Forfait Vin D\u00e9jeuner 14.10",
+                    "price": 1552.32,
+                    "isOption": true
+                },
+                {
+                    "desc": "Photobooth",
+                    "price": 1920.0,
+                    "subDesc": "Sur deux jours (2 forfaits)"
+                },
+                {
+                    "desc": "Bo\u00eete \u00e0 question - Mat\u00e9riel",
+                    "price": 400.0
+                },
+                {
+                    "desc": "Bo\u00eete \u00e0 question - Ing\u00e9nieur son",
+                    "price": 1200.0
+                }
+            ],
+            "gestion": [
+                {
+                    "desc": "Impression Badges",
+                    "price": 1134.0,
+                    "subDesc": "315 badges personnalis\u00e9s"
+                },
+                {
+                    "desc": "Option 2 Badges",
+                    "price": 1323.6,
+                    "isOption": true
+                },
+                {
+                    "desc": "Photographe",
+                    "price": 2520.0,
+                    "subDesc": "Studio C\u00e9cile Aubry"
+                },
+                {
+                    "desc": "Hotesses",
+                    "price": 3669.6
+                },
+                {
+                    "desc": "Transfert A-R A\u00e9roport Montpellier",
+                    "price": 1699.5
+                },
+                {
+                    "desc": "Transfert A-R Gare Montpellier St Roch",
+                    "price": 1699.5
+                },
+                {
+                    "desc": "Transfert A-R Gare Montpellier Sud de France",
+                    "price": 1699.5
+                },
+                {
+                    "desc": "Cr\u00e9ation fil rouge",
+                    "price": 1200.0
+                },
+                {
+                    "desc": "D\u00e9clinaison kak\u00e9mono",
+                    "price": 90.0
+                },
+                {
+                    "desc": "Impression Kak\u00e9mono",
+                    "price": 300.0
+                },
+                {
+                    "desc": "Cr\u00e9ation d'invitation",
+                    "price": 600.0
+                },
+                {
+                    "desc": "D\u00e9clinaison d'invitation digitale",
+                    "price": 90.0
+                },
+                {
+                    "desc": "D\u00e9clinaison photocall",
+                    "price": 90.0
+                },
+                {
+                    "desc": "Photocall",
+                    "price": 436.8,
+                    "subDesc": "Mur 3x3 m\u00e8tres"
+                },
+                {
+                    "desc": "D\u00e9clinaison support digital",
+                    "price": 90.0
+                },
+                {
+                    "desc": "D\u00e9clinaison sur badge",
+                    "price": 90.0
+                },
+                {
+                    "desc": "Application",
+                    "price": 1800.0
+                },
+                {
+                    "desc": "Conception webapp",
+                    "price": 1200.0
+                },
+                {
+                    "desc": "Masque PPT 10 slides",
+                    "price": 1000.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Bilan Carbone",
+                    "price": 3000.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Sc\u00e9nographie Plantes hautes",
+                    "price": 360.0
+                },
+                {
+                    "desc": "Sc\u00e9nographie lettres",
+                    "price": 2172.0
+                },
+                {
+                    "desc": "Bracelets lumineux",
+                    "price": 1937.64
+                },
+                {
+                    "desc": "Speaker 1 : C\u00e9cile Monteil",
+                    "price": 7800.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Speaker 2 : Carlos Moreno",
+                    "price": 14400.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Speaker 3 : Julie Bourreau",
+                    "price": 4800.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Dons \u00e0 l'association choisie",
+                    "price": 500.0
+                },
+                {
+                    "desc": "D\u00e9coration",
+                    "price": 600.0
+                },
+                {
+                    "desc": "Mosaique photo",
+                    "price": 1000.0
+                }
+            ],
+            "accompagnement": [
+                {
+                    "desc": "Forfait Weever",
+                    "price": 8500.0
+                },
+                {
+                    "desc": "VHR - H\u00e9bergement",
+                    "price": 1382.37
+                },
+                {
+                    "desc": "VHR - Taxes de s\u00e9jour",
+                    "price": 14.4
+                },
+                {
+                    "desc": "VHR - Transports",
+                    "price": 1360.0
+                },
+                {
+                    "desc": "VHR - Restauration",
+                    "price": 500.0
+                },
+                {
+                    "desc": "Rep\u00e9rage avec 1 Weever",
+                    "price": 750.0,
+                    "isOption": true
+                }
+            ]
+        },
+        "sideEvent": {
+            "totalTTC": 63831.98,
+            "totalHT": 53234.44,
+            "honorairesHT": 5703.69,
+            "categories": {
+                "hebergement": 40114.65,
+                "reunions": 2397.09,
+                "restauration": 0.0,
+                "gestion": 1699.5,
+                "accompagnement": 3319.51
+            },
+            "details": {
+                "hebergement": [
+                    {
+                        "desc": "Formule pension compl\u00e8te (150 pax)",
+                        "price": 39898.65
+                    },
+                    {
+                        "desc": "Taxes de s\u00e9jour",
+                        "price": 216.0
+                    }
+                ],
+                "reunions": [
+                    {
+                        "desc": "Salle Les 3 Fontaines",
+                        "price": 0.0
+                    },
+                    {
+                        "desc": "Salles cat\u00e9gorie C (3)",
+                        "price": 1897.5
+                    },
+                    {
+                        "desc": "Technicien Son & Vid\u00e9o obligatoire",
+                        "price": 320.84
+                    },
+                    {
+                        "desc": "Salle pl\u00e9ni\u00e8re - Agent de s\u00e9curit\u00e9",
+                        "price": 178.75
+                    }
+                ],
+                "restauration": [
+                    {
+                        "desc": "D\u00eener, D\u00e9jeuner, Pause caf\u00e9",
+                        "price": 0.0,
+                        "subDesc": "Inclus"
+                    }
+                ],
+                "gestion": [
+                    {
+                        "desc": "Transfert A-R A\u00e9roport Marseille",
+                        "price": 566.5
+                    },
+                    {
+                        "desc": "Transfert A-R Avignon TGV",
+                        "price": 566.5
+                    },
+                    {
+                        "desc": "Transfert A-R Gare Marseille St Charles",
+                        "price": 566.5
+                    }
+                ],
+                "accompagnement": [
+                    {
+                        "desc": "Forfait Weever (J2, J3)",
+                        "price": 1800.0
+                    },
+                    {
+                        "desc": "VHR - H\u00e9bergement",
+                        "price": 435.19
+                    },
+                    {
+                        "desc": "VHR - Taxes de s\u00e9jour",
+                        "price": 4.32
+                    },
+                    {
+                        "desc": "VHR - Transports",
+                        "price": 960.0
+                    },
+                    {
+                        "desc": "VHR - Restauration",
+                        "price": 120.0
+                    }
+                ]
+            }
+        }
+    },
+    "pontroyal": {
+        "id": "pontroyal",
+        "name": "Village Pont Royal",
+        "totalTTC": 289621.45,
+        "totalHT": 241351.21,
+        "honorairesHT": 25859.06,
+        "categories": {
+            "hebergement": 70779.45,
+            "reunions": 49132.92,
+            "restauration": 55930.52,
+            "gestion": 27743.17,
+            "accompagnement": 11906.08
+        },
+        "details": {
+            "hebergement": [
+                {
+                    "desc": "Forfait S\u00e9minaire 1/2 Pension D\u00e9jeuner (Single)",
+                    "price": 48367.94,
+                    "subDesc": "270 pax"
+                },
+                {
+                    "desc": "Forfait S\u00e9minaire 1/2 Pension D\u00e9jeuner (Co-single)",
+                    "price": 1447.74,
+                    "subDesc": "10 pax"
+                },
+                {
+                    "desc": "H\u00e9bergements: 35 appartements (Maeva)",
+                    "price": 16232.48,
+                    "subDesc": "35 pax"
+                },
+                {
+                    "desc": "Prestations h\u00e9bergement (lits, linge, m\u00e9nage)",
+                    "price": 4016.25
+                },
+                {
+                    "desc": "Taxe de s\u00e9jour",
+                    "price": 715.05,
+                    "subDesc": "315 pax"
+                }
+            ],
+            "reunions": [
+                {
+                    "desc": "Forfait Journ\u00e9e d'\u00e9tude",
+                    "price": 19467.95,
+                    "subDesc": "315 pax"
+                },
+                {
+                    "desc": "Espace M\u00e9dicis - Salle pl\u00e9ni\u00e8re",
+                    "price": 0.0
+                },
+                {
+                    "desc": "Espace M\u00e9dicis - 2 sous-commission le 13/10",
+                    "price": 0.0
+                },
+                {
+                    "desc": "Espace M\u00e9dicis - Locations sous-com (diverses tailles)",
+                    "price": 2006.24
+                },
+                {
+                    "desc": "Espace M\u00e9dicis - Forfait prestation technique",
+                    "price": 5462.35
+                },
+                {
+                    "desc": "Espace M\u00e9dicis - Syst\u00e8me de lumi\u00e8re",
+                    "price": 858.6,
+                    "isOption": true
+                },
+                {
+                    "desc": "Espace M\u00e9dicis - Repas techniciens",
+                    "price": 124.51
+                },
+                {
+                    "desc": "Haut du Village - Locations sous-com",
+                    "price": 1738.76
+                },
+                {
+                    "desc": "Haut du Village - Forfait prestation technique Salle Art\u00e9misia",
+                    "price": 1364.25
+                },
+                {
+                    "desc": "Haut du Village - Repas technicien",
+                    "price": 31.13
+                },
+                {
+                    "desc": "Chapiteau avec plancher et \u00e9clairage",
+                    "price": 9947.45
+                },
+                {
+                    "desc": "25 stands",
+                    "price": 1054.49
+                },
+                {
+                    "desc": "Frais de transport",
+                    "price": 7490.0
+                }
+            ],
+            "restauration": [
+                {
+                    "desc": "Pauses caf\u00e9",
+                    "price": 446.8,
+                    "subDesc": "Pour participants Maeva (autres inclus)"
+                },
+                {
+                    "desc": "D\u00e9jeuners & Petit-d\u00e9jeuners",
+                    "price": 1769.8,
+                    "subDesc": "Pour participants Maeva (autres inclus)"
+                },
+                {
+                    "desc": "Cocktail d\u00e9jeunatoire 13/10 et 14/10",
+                    "price": 9452.52
+                },
+                {
+                    "desc": "D\u00e9localisation restauration sous chapiteau 13/10 et 14/10",
+                    "price": 2889.82,
+                    "isOption": true
+                },
+                {
+                    "desc": "Mobilier Guinguette",
+                    "price": 1732.5
+                },
+                {
+                    "desc": "D\u00eener 13/10 - D\u00eener Gamme Bistro",
+                    "price": 21916.13
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Suppl\u00e9ment Fromages",
+                    "price": 2425.5,
+                    "isOption": true
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Forfait vin",
+                    "price": 1143.45
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Ap\u00e9ritif",
+                    "price": 3811.5,
+                    "isOption": true
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Ap\u00e9ritif champagne",
+                    "price": 1836.45,
+                    "isOption": true
+                },
+                {
+                    "desc": "D\u00eener 13/10 - boisson apr\u00e8s le repas (soft)",
+                    "price": 2875.95
+                },
+                {
+                    "desc": "D\u00eener 13/10 - boisson apr\u00e8s repas (alcool)",
+                    "price": 1074.15
+                },
+                {
+                    "desc": "D\u00eener 13/10 - bouteille suppl\u00e9mentaire / f\u00fbt",
+                    "price": 159.26,
+                    "isOption": true
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Droit de bouchon",
+                    "price": 0.0
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Forfait transformation",
+                    "price": 3208.34
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Suppl\u00e9ment horaire",
+                    "price": 71.5,
+                    "isOption": true
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Animation DJ",
+                    "price": 1485.0
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Repas DJ",
+                    "price": 32.0
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Animation soir\u00e9e 1 Bingo",
+                    "price": 5489.0
+                },
+                {
+                    "desc": "D\u00eener 13/10 - Animation soir\u00e9e 2 Blindtest",
+                    "price": 6028.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Cadeau pour l'\u00e9quipe gagnante",
+                    "price": 100.0
+                },
+                {
+                    "desc": "Photobooth",
+                    "price": 1760.0
+                },
+                {
+                    "desc": "Bo\u00eete \u00e0 question (mat\u00e9riel + ing\u00e9 son)",
+                    "price": 2000.0
+                }
+            ],
+            "gestion": [
+                {
+                    "desc": "Badges",
+                    "price": 1181.25
+                },
+                {
+                    "desc": "Option 2 Badges",
+                    "price": 1378.75,
+                    "isOption": true
+                },
+                {
+                    "desc": "Photographe",
+                    "price": 2200.0
+                },
+                {
+                    "desc": "H\u00f4tesses",
+                    "price": 3300.0
+                },
+                {
+                    "desc": "Transfert A-R A\u00e9roport Marseille",
+                    "price": 2575.8
+                },
+                {
+                    "desc": "Transfert A-R Avignon TGV",
+                    "price": 2251.8
+                },
+                {
+                    "desc": "Transfert A-R Gare Marseille St Charles",
+                    "price": 2754.0
+                },
+                {
+                    "desc": "Agent de securit\u00e9",
+                    "price": 996.68
+                },
+                {
+                    "desc": "Cr\u00e9ation fil rouge",
+                    "price": 1200.0
+                },
+                {
+                    "desc": "Kak\u00e9mono (cr\u00e9ation + impression)",
+                    "price": 390.0
+                },
+                {
+                    "desc": "Cr\u00e9ation invitation & digitale",
+                    "price": 690.0
+                },
+                {
+                    "desc": "Photocall (d\u00e9clinaison + mur)",
+                    "price": 454.0
+                },
+                {
+                    "desc": "D\u00e9clinaison support digital & badge",
+                    "price": 180.0
+                },
+                {
+                    "desc": "Application & Webapp",
+                    "price": 3000.0
+                },
+                {
+                    "desc": "Masque PPT 10 slides",
+                    "price": 1000.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Bilan Carbone",
+                    "price": 3000.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Sc\u00e9nographie plantes & lettres",
+                    "price": 2532.0
+                },
+                {
+                    "desc": "Bracelets lumineux",
+                    "price": 1937.64
+                },
+                {
+                    "desc": "Speakers (Monteil, Moreno, Bourreau)",
+                    "price": 27000.0,
+                    "isOption": true
+                },
+                {
+                    "desc": "Dons \u00e0 l'association choisie",
+                    "price": 500.0
+                },
+                {
+                    "desc": "D\u00e9coration",
+                    "price": 600.0
+                },
+                {
+                    "desc": "Mosaique photo",
+                    "price": 1000.0
+                }
+            ],
+            "accompagnement": [
+                {
+                    "desc": "Forfait Weever",
+                    "price": 8500.0
+                },
+                {
+                    "desc": "VHR - H\u00e9bergement",
+                    "price": 1669.08
+                },
+                {
+                    "desc": "VHR - Train",
+                    "price": 325.0
+                },
+                {
+                    "desc": "VHR - Camion 7m3",
+                    "price": 912.0
+                },
+                {
+                    "desc": "VHR - Restauration",
+                    "price": 500.0
+                },
+                {
+                    "desc": "Rep\u00e9rage avec 1 Weever",
+                    "price": 750.0,
+                    "isOption": true
+                }
+            ]
+        },
+        "sideEvent": {
+            "totalTTC": 58239.0,
+            "totalHT": 48532.5,
+            "honorairesHT": 5199.91,
+            "categories": {
+                "hebergement": 34114.26,
+                "reunions": 3441.43,
+                "restauration": 0.0,
+                "gestion": 2574.0,
+                "accompagnement": 3202.9
+            },
+            "details": {
+                "hebergement": [
+                    {
+                        "desc": "Forfait S\u00e9minaire Pension compl\u00e8te (150 pax)",
+                        "price": 33773.76
+                    },
+                    {
+                        "desc": "Taxe de s\u00e9jour",
+                        "price": 340.5
+                    }
+                ],
+                "reunions": [
+                    {
+                        "desc": "Espace M\u00e9dicis - Salle pl\u00e9ni\u00e8re",
+                        "price": 0.0
+                    },
+                    {
+                        "desc": "Espace M\u00e9dicis - Location salles sous commission",
+                        "price": 1980.0
+                    },
+                    {
+                        "desc": "Espace M\u00e9dicis - Forfait prestation technique",
+                        "price": 1398.6
+                    },
+                    {
+                        "desc": "Espace M\u00e9dicis - Repas techniciens",
+                        "price": 62.83
+                    }
+                ],
+                "restauration": [
+                    {
+                        "desc": "D\u00eener, D\u00e9jeuner, Pauses",
+                        "price": 0.0,
+                        "subDesc": "Inclus"
+                    }
+                ],
+                "gestion": [
+                    {
+                        "desc": "Transfert A-R A\u00e9roport Marseille",
+                        "price": 874.5
+                    },
+                    {
+                        "desc": "Transfert A-R Avignon TGV",
+                        "price": 764.5
+                    },
+                    {
+                        "desc": "Transfert A-R Gare Marseille St Charles",
+                        "price": 935.0
+                    }
+                ],
+                "accompagnement": [
+                    {
+                        "desc": "Forfait Weever",
+                        "price": 1800.0
+                    },
+                    {
+                        "desc": "VHR - H\u00e9bergement",
+                        "price": 370.9
+                    },
+                    {
+                        "desc": "VHR - Transport",
+                        "price": 912.0
+                    },
+                    {
+                        "desc": "VHR - Restauration",
+                        "price": 120.0
+                    }
+                ]
+            }
+        }
+    }
+};
 
         const categoryLabels = {
-            hotellerie: "Hôtellerie",
-            restauration: "Restauration",
-            activites: "Activités",
-            transport: "Transport",
-            frais_annexes: "Frais Annexes",
-            rse: "RSE",
-            accompagnement: "Accompagnement (Weever)"
-        };
+    "hebergement": "H\u00e9bergement",
+    "reunions": "R\u00e9unions",
+    "restauration": "Restauration & Animation",
+    "gestion": "Gestion des participants",
+    "accompagnement": "Accompagnement (Weever)"
+};
 
         const categoryColors = {
-            hotellerie: "bg-blue-500",
-            restauration: "bg-orange-500",
-            activites: "bg-purple-500",
-            transport: "bg-slate-500",
-            frais_annexes: "bg-amber-500",
-            rse: "bg-emerald-500",
-            accompagnement: "bg-teal-500"
-        };
+    "hebergement": "bg-blue-500",
+    "reunions": "bg-purple-500",
+    "restauration": "bg-orange-500",
+    "gestion": "bg-amber-500",
+    "accompagnement": "bg-teal-500"
+};
 
         const textColors = {
             hotellerie: "text-blue-500",
@@ -256,7 +1327,7 @@
                 <div className="space-y-8 animate-fade-in">
 
                     {/* Top KPI Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-3 gap-4 md:gap-6">
                         {venues.map((venue) => {
                             return (
                                 <div key={venue.id} className="relative bg-white rounded-xl shadow-sm border border-gray-200 p-6">
@@ -325,8 +1396,9 @@
                                 <thead className="bg-gray-50">
                                     <tr>
                                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Poste de Dépense (HT)</th>
-                                        <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Palma de Majorque</th>
-                                        <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Casablanca</th>
+                                        {venues.map(venue => (
+                                            <th key={`th-${venue.id}`} className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">{venue.name}</th>
+                                        ))}
                                     </tr>
                                 </thead>
                                 <tbody className="bg-white divide-y divide-gray-200">
@@ -446,7 +1518,11 @@
                                                 {venue.details[catKey].map((item, idx) => (
                                                     <div key={idx} className="flex flex-col text-sm border-b border-gray-50 pb-2 last:border-0 last:pb-0">
                                                         <div className="flex justify-between items-start gap-4">
-                                                            <span className="text-gray-800 font-medium">{item.desc}</span>
+                                                            {/* Options in different color */}
+                                                            <span className={`font-medium flex items-center gap-2 ${item.isOption ? "text-amber-600" : "text-gray-800"}`}>
+                                                                {item.desc}
+                                                                {item.isOption && <span className="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full uppercase font-bold tracking-wider relative top-px">Option</span>}
+                                                            </span>
                                                             <span className="text-gray-900 font-bold whitespace-nowrap">{formatEur(item.price)}</span>
                                                         </div>
                                                         {item.subDesc && (
@@ -505,9 +1581,113 @@
                                     <strong>Note:</strong> Les montants indiqués (notamment les transports) sont provisionnels et seront ajustés au réel. Les postes RSE sont en option.
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
+                    {/* --- SIDE EVENT --- */}
+                    {venue.sideEvent && (
+                        <div className="mt-12">
+                            <div className="flex items-center gap-4 mb-6">
+                                <h3 className="text-xl font-bold text-gray-900">Side Event (14/10 - 15/10)</h3>
+                                <div className="h-px bg-gray-200 flex-1"></div>
+                            </div>
+                            
+                            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                                <div>
+                                    <h4 className="text-lg font-semibold text-gray-900">Budget Side Event</h4>
+                                    <p className="text-gray-500">Estimatif pour l'événement secondaire</p>
+                                </div>
+                                <div className="text-right bg-emerald-50 p-4 rounded-lg border border-emerald-100">
+                                    <p className="text-sm font-medium text-emerald-600 uppercase tracking-wider mb-1">Total TTC</p>
+                                    <p className="text-3xl font-bold text-emerald-900">{formatEur(venue.sideEvent.totalTTC)}</p>
+                                    <p className="text-xs text-emerald-500 mt-1">Total HT: {formatEur(venue.sideEvent.totalHT)}</p>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                <div className="lg:col-span-2 space-y-4">
+                                    {Object.entries(venue.sideEvent.categories).filter(([k,v])=>v>0 || (venue.sideEvent.details[k] && venue.sideEvent.details[k].length>0)).map(([catKey, catValue]) => {
+                                        const subHT = venue.sideEvent.totalHT - venue.sideEvent.honorairesHT;
+                                        const percentage = ((catValue / subHT) * 100).toFixed(1);
+                                        return (
+                                            <div key={`side-${catKey}`} className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 flex flex-col gap-4">
+                                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                                    <div className="flex items-center gap-3">
+                                                        <div className={`min-w-[3.5rem] px-2 h-10 rounded-lg flex items-center justify-center text-white ${categoryColors[catKey] || 'bg-gray-500'}`}>
+                                                            <span className="font-bold text-sm">{isNaN(percentage) ? '0.0' : percentage}%</span>
+                                                        </div>
+                                                        <div>
+                                                            <h4 className="font-semibold text-gray-900">{categoryLabels[catKey] || catKey}</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div className="text-right">
+                                                        <p className="text-lg font-bold text-gray-900">{formatEur(catValue)}</p>
+                                                        <p className="text-xs text-gray-500">HT</p>
+                                                    </div>
+                                                </div>
+                                                {venue.sideEvent.details && venue.sideEvent.details[catKey] && (
+                                                    <div className="mt-2 pt-4 border-t border-gray-100 space-y-3">
+                                                        {venue.sideEvent.details[catKey].map((item, idx) => (
+                                                            <div key={`side-${idx}`} className="flex flex-col text-sm border-b border-gray-50 pb-2 last:border-0 last:pb-0">
+                                                                <div className="flex justify-between items-start gap-4">
+                                                                    <span className={`font-medium flex items-center gap-2 ${item.isOption ? "text-amber-600" : "text-gray-800"}`}>
+                                                                        {item.desc}
+                                                                        {item.isOption && <span className="text-[10px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full uppercase font-bold tracking-wider relative top-px">Option</span>}
+                                                                    </span>
+                                                                    <span className="text-gray-900 font-bold whitespace-nowrap">{formatEur(item.price)}</span>
+                                                                </div>
+                                                                {item.subDesc && (
+                                                                    <div className="text-gray-500 text-xs mt-1 italic leading-relaxed whitespace-pre-line pr-16">{item.subDesc}</div>
+                                                                )}
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        );
+                                    })}
+                                    <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Honoraires Weever (Side Event)</h4>
+                                        </div>
+                                        <div className="text-right">
+                                            <p className="text-lg font-bold text-gray-900">{formatEur(venue.sideEvent.honorairesHT)}</p>
+                                            <p className="text-xs text-gray-500">HT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lg:col-span-1">
+                                    {/* Additional info or blank space for side event side panel */}
+                                    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sticky top-24">
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-4 border-b pb-2">Récapitulatif Financier Side Event</h3>
+                                        <div className="space-y-3 text-sm">
+                                            <div className="flex justify-between text-gray-600">
+                                                <span>Sous-total HT</span>
+                                                <span>{formatEur(venue.sideEvent.totalHT - venue.sideEvent.honorairesHT)}</span>
+                                            </div>
+                                            <div className="flex justify-between text-gray-600">
+                                                <span>Honoraires HT</span>
+                                                <span>{formatEur(venue.sideEvent.honorairesHT)}</span>
+                                            </div>
+                                            <div className="border-t pt-3 flex justify-between text-gray-500 text-sm">
+                                                <span>Total HT</span>
+                                                <span>{formatEur(venue.sideEvent.totalHT)}</span>
+                                            </div>
+                                            <div className="flex justify-between text-gray-500 text-sm mt-1">
+                                                <span>TVA estimée</span>
+                                                <span>{formatEur(venue.sideEvent.totalTTC - venue.sideEvent.totalHT)}</span>
+                                            </div>
+                                            <div className="border-t pt-3 mt-2 flex justify-between font-bold text-emerald-600 text-lg">
+                                                <span>Total TTC</span>
+                                                <span>{formatEur(venue.sideEvent.totalTTC)}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                 </div>
             );
         };
