@@ -1321,11 +1321,11 @@
                                 <div key={venue.id} className="relative bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                                     <h3 className="text-lg font-semibold text-gray-900 mb-4">{venue.name}</h3>
                                     <div className="mb-2">
-                                        <p className="text-sm text-gray-500 uppercase tracking-wide">Budget Total TTC</p>
-                                        <p className="text-3xl font-bold text-gray-900">{formatEur(venue.totalTTC)}</p>
+                                        <p className="text-sm text-gray-500 uppercase tracking-wide">Budget Total HT</p>
+                                        <p className="text-3xl font-bold text-gray-900">{formatEur(venue.totalHT)}</p>
                                     </div>
                                     <div className="flex justify-between text-sm text-gray-500 mt-4 pt-4 border-t border-gray-100">
-                                        <span>Total HT: {formatEur(venue.totalHT)}</span>
+                                        <span>Total TTC: {formatEur(venue.totalTTC)}</span>
                                     </div>
                                 </div>
                             );
@@ -1424,25 +1424,25 @@
                                         ))}
                                     </tr>
 
-                                    {/* Totals Row TTC */}
+                                    {/* Totals Row HT */}
                                     <tr className="bg-sky-50 border-t border-sky-200">
-                                        <td className="px-6 py-4 whitespace-nowrap font-bold text-sky-900">TOTAL TTC</td>
+                                        <td className="px-6 py-4 whitespace-nowrap font-bold text-sky-900">TOTAL HT</td>
                                         {venues.map(venue => {
                                             const isCheapest = venue.id === sortedVenues[0].id;
                                             return (
-                                                <td key={`tot-ttc-${venue.id}`} className={`px-6 py-4 whitespace-nowrap text-right font-bold text-lg ${isCheapest ? 'text-green-600' : 'text-sky-900'}`}>
-                                                    {formatEur(venue.totalTTC)}
+                                                <td key={`tot-ht-${venue.id}`} className={`px-6 py-4 whitespace-nowrap text-right font-bold text-lg ${isCheapest ? 'text-green-600' : 'text-sky-900'}`}>
+                                                    {formatEur(venue.totalHT)}
                                                 </td>
                                             );
                                         })}
                                     </tr>
 
-                                    {/* Sub Totals Row HT */}
+                                    {/* Sub Totals Row TTC */}
                                     <tr className="bg-sky-50/50">
-                                        <td className="px-6 py-3 whitespace-nowrap text-sm text-sky-700">Total HT</td>
+                                        <td className="px-6 py-3 whitespace-nowrap text-sm text-sky-700">Total TTC</td>
                                         {venues.map(venue => (
-                                            <td key={`tot-ht-${venue.id}`} className="px-6 py-3 whitespace-nowrap text-right text-sm text-sky-700">
-                                                {formatEur(venue.totalHT)}
+                                            <td key={`tot-ttce-${venue.id}`} className="px-6 py-3 whitespace-nowrap text-right text-sm text-sky-700">
+                                                {formatEur(venue.totalTTC)}
                                             </td>
                                         ))}
                                     </tr>
@@ -1468,9 +1468,9 @@
                             <p className="text-gray-500">Détail du devis estimatif</p>
                         </div>
                         <div className="text-right bg-sky-50 p-4 rounded-lg border border-sky-100">
-                            <p className="text-sm font-medium text-sky-600 uppercase tracking-wider mb-1">Total TTC</p>
-                            <p className="text-3xl font-bold text-sky-900">{formatEur(venue.totalTTC)}</p>
-                            <p className="text-xs text-sky-500 mt-1">Total HT: {formatEur(venue.totalHT)}</p>
+                            <p className="text-sm font-medium text-sky-600 uppercase tracking-wider mb-1">Total HT</p>
+                            <p className="text-3xl font-bold text-sky-900">{formatEur(venue.totalHT)}</p>
+                            <p className="text-xs text-sky-500 mt-1">Total TTC (estimé): {formatEur(venue.totalTTC)}</p>
                         </div>
                     </div>
 
@@ -1552,16 +1552,12 @@
                                         <span>{formatEur(venue.honorairesHT)}</span>
                                     </div>
                                     <div className="border-t pt-3 flex justify-between text-gray-500 text-sm">
-                                        <span>Total HT</span>
-                                        <span>{formatEur(venue.totalHT)}</span>
-                                    </div>
-                                    <div className="flex justify-between text-gray-500 text-sm mt-1">
-                                        <span>TVA estimée</span>
-                                        <span>{formatEur(venue.totalTTC - venue.totalHT)}</span>
+                                        <span>Total TTC (estimé)</span>
+                                        <span>{formatEur(venue.totalTTC)}</span>
                                     </div>
                                     <div className="border-t pt-3 mt-2 flex justify-between font-bold text-sky-600 text-lg">
-                                        <span>Total TTC</span>
-                                        <span>{formatEur(venue.totalTTC)}</span>
+                                        <span>Total HT</span>
+                                        <span>{formatEur(venue.totalHT)}</span>
                                     </div>
                                 </div>
 
@@ -1586,9 +1582,9 @@
                                     <p className="text-gray-500">Estimatif pour l'événement secondaire</p>
                                 </div>
                                 <div className="text-right bg-emerald-50 p-4 rounded-lg border border-emerald-100">
-                                    <p className="text-sm font-medium text-emerald-600 uppercase tracking-wider mb-1">Total TTC</p>
-                                    <p className="text-3xl font-bold text-emerald-900">{formatEur(venue.sideEvent.totalTTC)}</p>
-                                    <p className="text-xs text-emerald-500 mt-1">Total HT: {formatEur(venue.sideEvent.totalHT)}</p>
+                                    <p className="text-sm font-medium text-emerald-600 uppercase tracking-wider mb-1">Total HT</p>
+                                    <p className="text-3xl font-bold text-emerald-900">{formatEur(venue.sideEvent.totalHT)}</p>
+                                    <p className="text-xs text-emerald-500 mt-1">Total TTC (estimé): {formatEur(venue.sideEvent.totalTTC)}</p>
                                 </div>
                             </div>
 
@@ -1658,16 +1654,12 @@
                                                 <span>{formatEur(venue.sideEvent.honorairesHT)}</span>
                                             </div>
                                             <div className="border-t pt-3 flex justify-between text-gray-500 text-sm">
-                                                <span>Total HT</span>
-                                                <span>{formatEur(venue.sideEvent.totalHT)}</span>
-                                            </div>
-                                            <div className="flex justify-between text-gray-500 text-sm mt-1">
-                                                <span>TVA estimée</span>
-                                                <span>{formatEur(venue.sideEvent.totalTTC - venue.sideEvent.totalHT)}</span>
+                                                <span>Total TTC (estimé)</span>
+                                                <span>{formatEur(venue.sideEvent.totalTTC)}</span>
                                             </div>
                                             <div className="border-t pt-3 mt-2 flex justify-between font-bold text-emerald-600 text-lg">
-                                                <span>Total TTC</span>
-                                                <span>{formatEur(venue.sideEvent.totalTTC)}</span>
+                                                <span>Total HT</span>
+                                                <span>{formatEur(venue.sideEvent.totalHT)}</span>
                                             </div>
                                         </div>
                                     </div>
