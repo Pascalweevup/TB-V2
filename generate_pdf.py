@@ -15,7 +15,7 @@ def generate():
         function App() {
             return (
                 <div className="bg-slate-50 font-sans">
-                    <div style={{ pageBreakAfter: 'always', paddingBottom: '40px', minHeight: '100vh' }}>
+                    <div className="print-section">
                         <header className="bg-white shadow-sm border-b border-gray-200 mb-8 p-4">
                             <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
                                 KPMG — Séminaire Financier
@@ -28,7 +28,7 @@ def generate():
                     </div>
 
                     {Object.values(budgetData).map(venue => (
-                        <div key={venue.id} style={{ pageBreakAfter: 'always', paddingBottom: '40px', minHeight: '100vh' }}>
+                        <div key={venue.id} className="print-section">
                             <main className="max-w-7xl mx-auto px-4">
                                 <VenueDetailView venueId={venue.id} />
                             </main>
@@ -42,7 +42,7 @@ def generate():
     # Remplacer la fonction App
     content = re.sub(r'function App\(\)\s*\{.*?\}\s*(?=// Mount the app)', app_replacement, content, flags=re.DOTALL)
 
-    # Styles d'impression optimisés pour éviter les coupures
+    # Styles d'impression forcés pour tenir sur 3 pages exactes
     style_print = """
         @media print {
             body { 
@@ -50,9 +50,10 @@ def generate():
                 print-color-adjust: exact; 
                 background-color: #f8fafc !important;
                 width: 100%;
+                margin: 0 !important;
+                padding: 0 !important;
             }
             .shadow-sm { box-shadow: none !important; border: 1px solid #e2e8f0 !important; }
-            /* Désactiver les animations */
             * { 
                 animation: none !important; 
                 transition: none !important; 
@@ -60,13 +61,23 @@ def generate():
                 transform: none !important; 
             }
             @page {
-                size: A4 portrait;
-                margin: 10mm;
+                size: A3 landscape;
+                margin: 0;
             }
-            /* Éviter les coupures à l'intérieur des blocs importants */
-            .bg-white.rounded-xl, .bg-white.rounded-lg {
-                break-inside: avoid;
-                page-break-inside: avoid;
+            .print-section {
+                page-break-after: always;
+                break-after: page;
+                height: 100vh;
+                width: 100vw;
+                padding: 20px;
+                box-sizing: border-box;
+                overflow: hidden; /* Empêche tout débordement qui créerait une page blanche ou supplémentaire */
+                display: flex;
+                flex-direction: column;
+                zoom: 0.85; /* Réduit légèrement pour être sûr que tout rentre */
+            }
+            .max-w-7xl {
+                max-width: 100% !important;
             }
         }
     """
@@ -77,7 +88,7 @@ def generate():
 
     print("Fichier print.html généré.")
     
-    pdf_path = "/Users/lolaricharte/Desktop/Budget_KPMG_Final.pdf"
+    pdf_path = "/Users/lolaricharte/Desktop/Budget_KPMG_Final_3Pages.pdf"
     html_url = "file://" + os.path.join(os.getcwd(), "print.html")
     
     cmd = [
@@ -90,7 +101,7 @@ def generate():
         html_url
     ]
     
-    print("Génération du PDF en cours...")
+    print("Génération du PDF 3 pages...")
     subprocess.run(cmd, check=True)
     print(f"PDF généré avec succès : {pdf_path}")
 
