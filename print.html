@@ -85,9 +85,10 @@
     "cinquieme_sens": {
         "id": "cinquieme_sens",
         "name": "Cinquième Sens",
-        "totalTTC": 3948.91,
-        "totalHT": 3290.76,
-        "honorairesHT": 243.76,
+        "totalTTC": 3839.22,
+        "totalHT": 3199.35,
+        "honorairesHT": 152.35,
+        "paxCount": 50,
         "categories": {
             "hebergement": 0.0,
             "reunions": 1617.0,
@@ -100,14 +101,14 @@
                 {
                     "desc": "Atelier Création de parfum - 2h",
                     "price": 1617.0,
-                    "subDesc": "2 Animateurs parfumeurs\nFormat : 2h00\nDéplacement dans vos locaux inclus"
+                    "subDesc": "2 Animateurs parfumeurs\nFormat : 2h00\nDéplacement dans vos locaux inclus\n(à prévoir : tables et chaises, vidéo-projecteur, stylos)"
                 }
             ],
             "restauration": [
                 {
                     "desc": "Flacon vaporisateur 15 ml",
                     "price": 1430.0,
-                    "subDesc": "50 unités\nLivraison incluse sous 8 jours"
+                    "subDesc": "50 unités — 28,60 € / unité\nLivraison dans vos locaux sous 8 jours incluse"
                 }
             ],
             "accompagnement": [
@@ -127,9 +128,10 @@
     "goodplanet": {
         "id": "goodplanet",
         "name": "Fondation GoodPlanet",
-        "totalTTC": 3297.74,
-        "totalHT": 2748.11,
-        "honorairesHT": 203.56,
+        "totalTTC": 3206.13,
+        "totalHT": 2671.78,
+        "honorairesHT": 127.23,
+        "paxCount": 50,
         "categories": {
             "hebergement": 0.0,
             "reunions": 2090.0,
@@ -142,14 +144,14 @@
                 {
                     "desc": "MY PLANET - Quiz Interactif",
                     "price": 2090.0,
-                    "subDesc": "Format de 1h à 1h30\nPlusieurs thématiques disponibles\nA la fondation GoodPlanet ou dans vos locaux"
+                    "subDesc": "Plusieurs thématiques disponibles :\n- Question pour un champion de l'écologie\n- Tout savoir sur le carbone\n- Testez vos connaissances sur les énergies\n- Vivant parmi les vivants\nFormat de 1h à 1h30\nA la fondation GoodPlanet ou dans vos locaux"
                 }
             ],
             "restauration": [
                 {
                     "desc": "Option - Pause gourmande",
                     "price": 825.0,
-                    "subDesc": "50 unités",
+                    "subDesc": "50 unités — 16,50 € / unité",
                     "isOption": true
                 }
             ],
@@ -160,7 +162,7 @@
                     "subDesc": "Mise à disposition 4 heures\nVéhicule TPMR homologué (4 places)"
                 },
                 {
-                    "desc": "Transport groupe (Bus 51 pass)",
+                    "desc": "Transport groupe (Bus 51 passagers + 1 PMR)",
                     "price": 696.0,
                     "isOption": true,
                     "subDesc": "Mise à disposition 4 heures"
@@ -241,6 +243,7 @@
                                     </div>
                                     <div className="flex justify-between text-sm text-gray-500 mt-4 pt-4 border-t border-gray-100">
                                         <span>Total TTC: {formatEur(venue.totalTTC)}</span>
+                                        <span className="font-semibold text-sky-600">{formatEur(venue.totalHT / venue.paxCount)} / pers.</span>
                                     </div>
                                 </div>
                             );
@@ -331,7 +334,7 @@
 
                                     {/* Honoraires Row */}
                                     <tr className="bg-gray-50 border-t-2 border-gray-200">
-                                        <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Honoraires Agence</td>
+                                        <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Honoraires Agence (5%)</td>
                                         {venues.map(venue => (
                                             <td key={`hon-${venue.id}`} className="px-6 py-4 whitespace-nowrap text-right text-gray-600">
                                                 {formatEur(venue.honorairesHT)}
@@ -358,6 +361,16 @@
                                         {venues.map(venue => (
                                             <td key={`tot-ttce-${venue.id}`} className="px-6 py-3 whitespace-nowrap text-right text-sm text-sky-700">
                                                 {formatEur(venue.totalTTC)}
+                                            </td>
+                                        ))}
+                                    </tr>
+
+                                    {/* Prix par personne */}
+                                    <tr className="bg-sky-50/50">
+                                        <td className="px-6 py-3 whitespace-nowrap text-sm font-semibold text-sky-700">Prix par personne HT (50 pers.)</td>
+                                        {venues.map(venue => (
+                                            <td key={`pp-${venue.id}`} className="px-6 py-3 whitespace-nowrap text-right text-sm font-semibold text-sky-700">
+                                                {formatEur(venue.totalHT / venue.paxCount)}
                                             </td>
                                         ))}
                                     </tr>
@@ -443,7 +456,7 @@
 
                             <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                 <div>
-                                    <h4 className="font-semibold text-gray-900">Honoraires Weever</h4>
+                                    <h4 className="font-semibold text-gray-900">Honoraires Weever (5%)</h4>
                                     <p className="text-sm text-gray-500">Calculés sur le sous-total HT</p>
                                 </div>
                                 <div className="text-right">
@@ -463,7 +476,7 @@
                                         <span>{formatEur(subtotalHT)}</span>
                                     </div>
                                     <div className="flex justify-between text-gray-600">
-                                        <span>Honoraires HT</span>
+                                        <span>Honoraires HT (5%)</span>
                                         <span>{formatEur(venue.honorairesHT)}</span>
                                     </div>
                                     <div className="border-t pt-3 flex justify-between text-gray-500 text-sm">
@@ -474,6 +487,11 @@
                                         <span>Total HT</span>
                                         <span>{formatEur(venue.totalHT)}</span>
                                     </div>
+                                    <div className="border-t pt-3 mt-2 flex justify-between font-bold text-emerald-600 text-base">
+                                        <span>Prix / personne HT</span>
+                                        <span>{formatEur(venue.totalHT / venue.paxCount)}</span>
+                                    </div>
+                                    <p className="text-xs text-gray-400 text-right">Base {venue.paxCount} personnes</p>
                                 </div>
 
                                 <div className="mt-6 bg-blue-50 text-blue-800 text-xs p-3 rounded border border-blue-100">
