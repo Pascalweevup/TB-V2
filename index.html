@@ -64,14 +64,16 @@
 </head>
 
 <body>
-    <div id="root"></    <script type="text/babel">
+    <div id="root"></div>
+
+    <script type="text/babel">
         const { useState } = React;
 
         // --- DATA EXTRACTED FROM PDF ---
         const budgetData = {
-            "proposition": {
-                "id": "proposition",
-                "name": "KPMG - Cinquième Sens",
+            "cinquieme_sens": {
+                "id": "cinquieme_sens",
+                "name": "Cinquième Sens & Cœur Défense",
                 "totalTTC": 3852.50,
                 "totalHT": 3210.42,
                 "honorairesHT": 152.88,
@@ -397,14 +399,14 @@
                                     <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
                                         KPMG — Séminaire Financier
                                     </h1>
-                                    <p className="text-sm text-gray-500">Proposition événementielle — Cinquième Sens & Cœur Défense</p>
+                                    <p className="text-sm text-gray-500">Comparateur interactif de propositions pour le séminaire financier</p>
                                 </div>
                                 <div className="flex space-x-1 bg-gray-100 p-1 rounded-lg overflow-x-auto">
                                     <button
                                         onClick={() => setActiveTab('compare')}
                                         className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md whitespace-nowrap transition-colors ${activeTab === 'compare' ? 'bg-white text-sky-600 shadow-sm' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'}`}
                                     >
-                                        <IconChart /> Vue d'ensemble
+                                        <IconChart /> Vue Comparée
                                     </button>
                                     {Object.values(budgetData).map(venue => (
                                         <button
